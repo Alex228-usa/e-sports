@@ -1,0 +1,56 @@
+/* AthleteCard.css */
+.athlete-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .edit-form input,
+  .edit-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-form button:hover {
+    background-color: #555;
+  }
+  
+  .athlete-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .athlete-info p {
+    margin-bottom: 5px;
+  }
+  
+  .athlete-info button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .athlete-info button:hover {
+    background-color: #555;
+  }
+  
