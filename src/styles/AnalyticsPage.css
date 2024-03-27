@@ -1,0 +1,24 @@
+/* AnalyticsPage.css */
+.analytics-page {
+    padding: 20px;
+  }
+  
+  .analytics-chart {
+    margin-bottom: 20px;
+    /* Стили для графика или диаграммы */
+  }
+  
+  .analytics-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .analytics-table th, .analytics-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .analytics-table th {
+    background-color: #f0f0f0;
+  }
+  

@@ -1,0 +1,48 @@
+/* AthletesManagement.css */
+.athletes-management {
+    padding: 20px;
+  }
+  
+  .add-athlete-form {
+    margin-bottom: 20px;
+  }
+  
+  .add-athlete-form input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .add-athlete-form button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .athlete-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .athlete-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .athlete-item button {
+    padding: 6px 12px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

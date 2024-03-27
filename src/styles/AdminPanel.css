@@ -1,0 +1,37 @@
+/* AdminPanel.css */
+.admin-panel {
+    padding: 20px;
+  }
+  
+  .admin-form {
+    margin-bottom: 20px;
+  }
+  
+  .admin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-list-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  

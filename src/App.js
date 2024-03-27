@@ -1,23 +1,51 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import MainBlock from './components/MainBlock';
+import AboutUsBlock from './components/AboutUsBlock';
+import NewsBlock from './components/NewsBlock';
+import Footer from './components/Footer';
+import AthletesManagement from './components/AthletesManagement';
+import AthletePassport from './components/AthletePassport';
+
+const App = () => {
+  const [selectedAthlete, setSelectedAthlete] = useState(null);
+  const athletesData = [
+    { id: 1, name: 'Иван Иванов', age: 25, country: 'Россия', sport: 'Футбол', photo: 'ivan.jpg' },
+    { id: 2, name: 'Петр Петров', age: 30, country: 'США', sport: 'Теннис', photo: 'petr.jpg' },
+  ];
+
+  const handleSelectAthlete = (athlete) => {
+    setSelectedAthlete(athlete);
+  };
+
+  return (
+    <div>
+      <h1>Управление спортсменами</h1>
+      <AthletesManagement />
+      <h1>Паспорт спортсмена</h1>
+      <div style={{ display: 'flex', gap: '20px' }}>
+        {athletesData.map((athlete) => (
+          <div key={athlete.id}>
+            <button onClick={() => handleSelectAthlete(athlete)}>{athlete.name}</button>
+          </div>
+        ))}
+      </div>
+      {selectedAthlete && <AthletePassport athlete={selectedAthlete} />}
+    </div>
+  );
+};
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MainBlock />
+      <AboutUsBlock />
+      <NewsBlock />
+      <Footer />
     </div>
   );
 }
