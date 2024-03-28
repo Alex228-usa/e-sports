@@ -8,6 +8,13 @@ import NewsBlock from './components/NewsBlock';
 import Footer from './components/Footer';
 import AthletesManagement from './components/AthletesManagement';
 import AthletePassport from './components/AthletePassport';
+import AthleteBlock from './components/AthleteBlock';
+import AtheleteCard from './components/AtheleteCard';
+import RegistrationForm from './components/RegistrationForm';
+import ProfilePage from './components/ProfilePage';
+import EventsCalendar from './components/EventsCalendar';
+import Analytics from './components/Analytics';
+
 
 const App = () => {
   const [selectedAthlete, setSelectedAthlete] = useState(null);
